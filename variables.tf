@@ -1,5 +1,15 @@
-variable "client_name" {}
+variable "azurerm_region" {
+  description = "Azure region to use"
+}
 
-variable "azurerm_region" {}
+variable "client_name" {
+  description = "Client name/account used in naming"
+}
 
-variable "environment" {}
+variable "environment" {
+  description = "Project environment"
+}
+
+variable "stack" {
+  description = "Project stack name"
+}
