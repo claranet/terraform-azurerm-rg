@@ -1,6 +1,6 @@
 # README #
 
-Common AzureRM module to generate a ResourceGroup.
+Common Azure module to generate a Resource Group.
 
 ## Inputs
 
@@ -15,6 +15,6 @@ Common AzureRM module to generate a ResourceGroup.
 
 | Name | Description |
 |------|-------------|
-| resourcegroup_id | Resource group generated id |
-| resourcegroup_location | Resource group location (region) |
-| resourcegroup_name | Resource group name |
+| resource_group_id | Resource group generated id |
+| resource_group_location | Resource group location (region) |
+| resource_group_name | Resource group name |
