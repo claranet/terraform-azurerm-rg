@@ -1,4 +1,4 @@
-azurerm_region="France Central"
+azure_region="France Central"
 client_name="test"
 environment="test"
 stack="ci"
