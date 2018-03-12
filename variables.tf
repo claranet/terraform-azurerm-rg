@@ -1,4 +1,4 @@
-variable "azurerm_region" {
+variable "azure_region" {
   description = "Azure region to use"
 }
 
