@@ -13,3 +13,8 @@ variable "environment" {
 variable "stack" {
   description = "Project stack name"
 }
+
+variable "custom_rg_name" {
+  description = "Optional custom resource group name"
+  default     = ""
+}
