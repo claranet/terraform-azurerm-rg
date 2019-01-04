@@ -6,7 +6,7 @@ Common Azure module to generate a Resource Group.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| azure_region | Azure region to use | string | - | yes |
+| location | Azure region to use | string | - | yes |
 | client_name | Client name/account used in naming | string | - | yes |
 | custom_rg_name | Optional custom resource group name | string | `` | no |
 | environment | Project environment | string | - | yes |
