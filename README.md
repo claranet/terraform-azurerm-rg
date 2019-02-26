@@ -24,10 +24,11 @@ module "rg" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| location | Azure region to use | string | - | yes |
 | client_name | Client name/account used in naming | string | - | yes |
 | custom_rg_name | Optional custom resource group name | string | `` | no |
 | environment | Project environment | string | - | yes |
+| extra_tags | Extra tags to add | map | `<map>` | no |
+| location | Azure region to use | string | - | yes |
 | stack | Project stack name | string | - | yes |
 
 ## Outputs
