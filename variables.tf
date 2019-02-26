@@ -1,4 +1,4 @@
-variable "azure_region" {
+variable "location" {
   description = "Azure region to use"
 }
 
@@ -17,4 +17,10 @@ variable "stack" {
 variable "custom_rg_name" {
   description = "Optional custom resource group name"
   default     = ""
+}
+
+variable "extra_tags" {
+  description = "Extra tags to add"
+  type        = "map"
+  default     = {}
 }

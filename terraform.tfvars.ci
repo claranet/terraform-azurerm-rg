@@ -1,4 +1,7 @@
-azure_region="France Central"
+location="France Central"
 client_name="test"
 environment="test"
 stack="ci"
+extra_tags = {
+  foo = "bar"
+}
