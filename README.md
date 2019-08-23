@@ -1,6 +1,7 @@
 # Azure Resource Group
+[![Changelog](https://img.shields.io/badge/changelog-release-green.svg)](CHANGELOG.md) [![Notice](https://img.shields.io/badge/notice-copyright-yellow.svg)](NOTICE) [![Apache V2 License](http://img.shields.io/badge/license-Apache%20V2-blue.svg)](LICENSE)
 
-Common Azure module to create a Resource Group.
+Common Azure terraform module to create a Resource Group.
 
 ## Requirements
 
