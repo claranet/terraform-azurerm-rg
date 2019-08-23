@@ -1,22 +1,26 @@
-# README #
+# Azure Resource Group
 
 Common Azure module to create a Resource Group.
+
+## Requirements
+
+* Terraform >= 0.12
 
 ## Usage
 ```
 module "az-region" {
   source = "git::ssh://git@git.fr.clara.net/claranet/cloudnative/projects/cloud/azure/terraform/modules/regions.git?ref=vX.X.X"
 
-  azure_region = "${var.azure_region}"
+  azure_region = var.azure_region
 }
 
 module "rg" {
   source = "git::ssh://git@git.fr.clara.net/claranet/cloudnative/projects/cloud/azure/terraform/modules/rg.git?ref=vX.X.X"
 
-  location     = "${module.az-region.location}"
-  client_name  = "${var.client_name}"
-  environment  = "${var.environment}"
-  stack        = "${var.stack}"
+  location    = module.az-region.location
+  client_name = var.client_name
+  environment = var.environment
+  stack       = var.stack
 }
 ```
 
@@ -40,4 +44,5 @@ module "rg" {
 | resource_group_name | Resource group name |
 
 ## Related documentation
+
 Terraform documentation: [https://www.terraform.io/docs/providers/azurerm/r/resource_group.html]
