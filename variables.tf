@@ -21,6 +21,7 @@ variable "custom_rg_name" {
 
 variable "extra_tags" {
   description = "Extra tags to add"
-  type        = "map"
+  type        = map(string)
   default     = {}
 }
+
