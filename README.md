@@ -4,10 +4,12 @@ Common Azure module to create a Resource Group.
 
 ## Requirements
 
-* Terraform >= 0.12
+* [Terraform](https://www.terraform.io/downloads.html) >= 0.12
+* [AzureRM Terraform provider](https://www.terraform.io/docs/providers/azurerm/) >= 1.31
 
 ## Usage
-```
+
+```hcl
 module "az-region" {
   source = "git::ssh://git@git.fr.clara.net/claranet/cloudnative/projects/cloud/azure/terraform/modules/regions.git?ref=vX.X.X"
 

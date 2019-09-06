@@ -1,11 +1,11 @@
 # v2.0.0 - Unreleased
 
 Breaking
-  * AZ-94: Terraform 0.12+ upgrade, HCL 2 upgrade. No longer compatible with Terraform < 0.12.
+  * AZ-94 Terraform 0.12 / HCL2 format
 
 # v1.0.0 - 2019-02-26
 
-Added:
+Added
   * AZ-3: Continuous integration and terraform module validation
 
 Changed
@@ -14,7 +14,7 @@ Changed
 
 # v0.1.0 - 2018-07-08
 
-Added:
+Added
   * TER-236: Add custom naming for resource group.
 
 # v0.0.1 - 2018-03-12
