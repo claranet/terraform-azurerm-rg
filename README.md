@@ -1,11 +1,10 @@
 # Azure Resource Group
-[![Changelog](https://img.shields.io/badge/changelog-release-green.svg)](CHANGELOG.md) [![Notice](https://img.shields.io/badge/notice-copyright-yellow.svg)](NOTICE) [![Apache V2 License](http://img.shields.io/badge/license-Apache%20V2-blue.svg)](LICENSE)
+[![Changelog](https://img.shields.io/badge/changelog-release-green.svg)](CHANGELOG.md) [![Notice](https://img.shields.io/badge/notice-copyright-yellow.svg)](NOTICE) [![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-orange.svg)](LICENSE)[![TF Registry](https://img.shields.io/badge/terraform-registry-blue.svg)](https://registry.terraform.io/modules/claranet/rg/azurerm/)
 
 Common Azure terraform module to create a Resource Group.
 
 ## Requirements
 
-* [Terraform](https://www.terraform.io/downloads.html) >= 0.12
 * [AzureRM Terraform provider](https://www.terraform.io/docs/providers/azurerm/) >= 1.31
 
 ## Terraform version compatibility
@@ -19,7 +18,7 @@ Common Azure terraform module to create a Resource Group.
 
 ```hcl
 module "az-region" {
-  source  = "claranet/rg/regions"
+  source  = "claranet/regions/azurerm"
   version = "x.x.x"
 
   azure_region = var.azure_region
@@ -57,4 +56,4 @@ module "rg" {
 
 ## Related documentation
 
-Terraform documentation: [https://www.terraform.io/docs/providers/azurerm/r/resource_group.html]
+Terraform documentation: [terraform.io/docs/providers/azurerm/r/resource_group.html](https://www.terraform.io/docs/providers/azurerm/r/resource_group.html)
