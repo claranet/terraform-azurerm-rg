@@ -8,17 +8,26 @@ Common Azure terraform module to create a Resource Group.
 * [Terraform](https://www.terraform.io/downloads.html) >= 0.12
 * [AzureRM Terraform provider](https://www.terraform.io/docs/providers/azurerm/) >= 1.31
 
+## Terraform version compatibility
+
+| Module version | Terraform version |
+|----------------|-------------------|
+| >= 2.x.x       | 0.12.x            |
+| < 2.x.x        | 0.11.x            |
+
 ## Usage
 
 ```hcl
 module "az-region" {
-  source = "git::ssh://git@git.fr.clara.net/claranet/cloudnative/projects/cloud/azure/terraform/modules/regions.git?ref=vX.X.X"
+  source  = "claranet/rg/regions"
+  version = "x.x.x"
 
   azure_region = var.azure_region
 }
 
 module "rg" {
-  source = "git::ssh://git@git.fr.clara.net/claranet/cloudnative/projects/cloud/azure/terraform/modules/rg.git?ref=vX.X.X"
+  source  = "claranet/rg/azurerm"
+  version = "x.x.x"
 
   location    = module.az-region.location
   client_name = var.client_name
