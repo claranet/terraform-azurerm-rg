@@ -1,3 +1,8 @@
+# v2.0.1 - 2019-09-16
+
+Changed
+  * AZ-119: Revamp README to match HashiCorp best practices
+
 # v2.0.0 - 2019-09-06
 
 Breaking
