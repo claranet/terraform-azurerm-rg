@@ -16,6 +16,10 @@ Common Azure terraform module to create a Resource Group.
 
 ## Usage
 
+This module is optimized to work with the [Claranet terraform-wrapper](https://github.com/claranet/terraform-wrapper) tool
+which set some terraform variables in the environment needed by this module.
+More details about variables set by the `terraform-wrapper` available in the [documentation](https://github.com/claranet/terraform-wrapper#environment).
+
 ```hcl
 module "az-region" {
   source  = "claranet/regions/azurerm"
