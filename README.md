@@ -1,7 +1,7 @@
 # Azure Resource Group
 [![Changelog](https://img.shields.io/badge/changelog-release-green.svg)](CHANGELOG.md) [![Notice](https://img.shields.io/badge/notice-copyright-yellow.svg)](NOTICE) [![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-orange.svg)](LICENSE) [![TF Registry](https://img.shields.io/badge/terraform-registry-blue.svg)](https://registry.terraform.io/modules/claranet/rg/azurerm/)
 
-Common Azure terraform module to create a Resource Group.
+Common Azure terraform module to create a Resource Group with optional lock.
 
 ## Requirements
 
@@ -61,4 +61,6 @@ module "rg" {
 
 ## Related documentation
 
-Terraform documentation: [terraform.io/docs/providers/azurerm/r/resource_group.html](https://www.terraform.io/docs/providers/azurerm/r/resource_group.html)
+Terraform Azure RG documentation: [terraform.io/docs/providers/azurerm/r/resource_group.html](https://www.terraform.io/docs/providers/azurerm/r/resource_group.html)
+
+Terraform Lock management documentation: [terraform.io/docs/providers/azurerm/r/management_lock.html](https://www.terraform.io/docs/providers/azurerm/r/management_lock.html)
