@@ -1,3 +1,8 @@
+# v2.1.0 - Unreleased
+
+Added
+  * AZ-127: Add the option to lock the Resource Group once created (ReadOnly or CanNotDelete).
+
 # v2.0.2 - 2019-09-25
 
 Changed
