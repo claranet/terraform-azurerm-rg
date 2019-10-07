@@ -1,11 +1,11 @@
 # Azure Resource Group
-[![Changelog](https://img.shields.io/badge/changelog-release-green.svg)](CHANGELOG.md) [![Notice](https://img.shields.io/badge/notice-copyright-yellow.svg)](NOTICE) [![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-orange.svg)](LICENSE)[![TF Registry](https://img.shields.io/badge/terraform-registry-blue.svg)](https://registry.terraform.io/modules/claranet/rg/azurerm/)
+[![Changelog](https://img.shields.io/badge/changelog-release-green.svg)](CHANGELOG.md) [![Notice](https://img.shields.io/badge/notice-copyright-yellow.svg)](NOTICE) [![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-orange.svg)](LICENSE) [![TF Registry](https://img.shields.io/badge/terraform-registry-blue.svg)](https://registry.terraform.io/modules/claranet/rg/azurerm/)
 
-Common Azure terraform module to create a Resource Group.
+Common Azure terraform module to create a Resource Group with optional lock.
 
 ## Requirements
 
-* [AzureRM Terraform provider](https://www.terraform.io/docs/providers/azurerm/) >= 1.31
+* [AzureRM Terraform provider](https://www.terraform.io/docs/providers/azurerm/) >= 1.32
 
 ## Terraform version compatibility
 
@@ -43,21 +43,24 @@ module "rg" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| client_name | Client name/account used in naming | string | - | yes |
-| custom_rg_name | Optional custom resource group name | string | `` | no |
-| environment | Project environment | string | - | yes |
-| extra_tags | Extra tags to add | map | `<map>` | no |
-| location | Azure region to use | string | - | yes |
-| stack | Project stack name | string | - | yes |
+| client\_name | Client name/account used in naming | string | n/a | yes |
+| custom\_rg\_name | Optional custom resource group name | string | `""` | no |
+| environment | Project environment | string | n/a | yes |
+| extra\_tags | Extra tags to add | map(string) | `{}` | no |
+| location | Azure region to use | string | n/a | yes |
+| lock\_level | Specifies the Level to be used for this RG Lock. Possible values are Empty (no lock), CanNotDelete and ReadOnly. | string | `""` | no |
+| stack | Project stack name | string | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| resource_group_id | Resource group generated id |
-| resource_group_location | Resource group location (region) |
-| resource_group_name | Resource group name |
+| resource\_group\_id | Resource group generated id |
+| resource\_group\_location | Resource group location (region) |
+| resource\_group\_name | Resource group name |
 
 ## Related documentation
 
-Terraform documentation: [terraform.io/docs/providers/azurerm/r/resource_group.html](https://www.terraform.io/docs/providers/azurerm/r/resource_group.html)
+Terraform Azure RG documentation: [terraform.io/docs/providers/azurerm/r/resource_group.html](https://www.terraform.io/docs/providers/azurerm/r/resource_group.html)
+
+Terraform Lock management documentation: [terraform.io/docs/providers/azurerm/r/management_lock.html](https://www.terraform.io/docs/providers/azurerm/r/management_lock.html)
