@@ -1,3 +1,8 @@
+# Unreleased
+
+Fixed
+  * AZ-206: Pin version of provider AzureRM to be usable under v2.x
+
 # v2.1.0 - 2019-10-07
 
 Added

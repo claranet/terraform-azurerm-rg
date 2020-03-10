@@ -3,16 +3,13 @@
 
 Common Azure terraform module to create a Resource Group with optional lock.
 
-## Requirements
+## Version compatibility
 
-* [AzureRM Terraform provider](https://www.terraform.io/docs/providers/azurerm/) >= 1.32
-
-## Terraform version compatibility
-
-| Module version | Terraform version |
-|----------------|-------------------|
-| >= 2.x.x       | 0.12.x            |
-| < 2.x.x        | 0.11.x            |
+| Module version    | Terraform version | AzureRM version |
+|-------------------|-------------------|-----------------|
+| >= 3.x.x          | 0.12.x            | >= 2.0          |
+| >= 2.x.x, < 3.x.x | 0.12.x            | <  2.0          |
+| <  2.x.x          | 0.11.x            | <  2.0          |
 
 ## Usage
 
@@ -21,7 +18,7 @@ which set some terraform variables in the environment needed by this module.
 More details about variables set by the `terraform-wrapper` available in the [documentation](https://github.com/claranet/terraform-wrapper#environment).
 
 ```hcl
-module "az-region" {
+module "azure-region" {
   source  = "claranet/regions/azurerm"
   version = "x.x.x"
 
@@ -32,7 +29,7 @@ module "rg" {
   source  = "claranet/rg/azurerm"
   version = "x.x.x"
 
-  location    = module.az-region.location
+  location    = module.azure-region.location
   client_name = var.client_name
   environment = var.environment
   stack       = var.stack
@@ -42,14 +39,14 @@ module "rg" {
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
-| client\_name | Client name/account used in naming | string | n/a | yes |
-| custom\_rg\_name | Optional custom resource group name | string | `""` | no |
-| environment | Project environment | string | n/a | yes |
-| extra\_tags | Extra tags to add | map(string) | `{}` | no |
-| location | Azure region to use | string | n/a | yes |
-| lock\_level | Specifies the Level to be used for this RG Lock. Possible values are Empty (no lock), CanNotDelete and ReadOnly. | string | `""` | no |
-| stack | Project stack name | string | n/a | yes |
+|------|-------------|------|---------|:-----:|
+| client\_name | Client name/account used in naming | `string` | n/a | yes |
+| custom\_rg\_name | Optional custom resource group name | `string` | `""` | no |
+| environment | Project environment | `string` | n/a | yes |
+| extra\_tags | Extra tags to add | `map(string)` | `{}` | no |
+| location | Azure region to use | `string` | n/a | yes |
+| lock\_level | Specifies the Level to be used for this RG Lock. Possible values are Empty (no lock), CanNotDelete and ReadOnly. | `string` | `""` | no |
+| stack | Project stack name | `string` | n/a | yes |
 
 ## Outputs
 
