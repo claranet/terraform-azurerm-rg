@@ -39,7 +39,7 @@ module "rg" {
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
+|------|-------------|------|---------|:--------:|
 | client\_name | Client name/account used in naming | `string` | n/a | yes |
 | custom\_rg\_name | Optional custom resource group name | `string` | `""` | no |
 | environment | Project environment | `string` | n/a | yes |
