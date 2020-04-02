@@ -1,7 +1,8 @@
-# Unreleased
+# v2.1.1/v3.0.0 - Unreleased
 
-Fixed
-  * AZ-206: Pin version of provider AzureRM to be usable under v2.x
+Changed
+  * AZ-206: Update README, module compatible both AzureRM provider < 2.0 and >= 2.0
+  * AZ-209: Update CI with Gitlab template
 
 # v2.1.0 - 2019-10-07
 
