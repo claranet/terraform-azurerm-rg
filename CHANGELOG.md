@@ -1,3 +1,11 @@
+# Unreleased
+
+Changed
+  * AZ-398: Force lowercases on default generated name
+
+Added
+  * AZ-398: Add `name_prefix` variable for generated name
+
 # v3.0.1/v4.0.0 - 2020-10-20
 
 Changed

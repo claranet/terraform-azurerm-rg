@@ -47,6 +47,7 @@ module "rg" {
 | extra\_tags | Extra tags to add | `map(string)` | `{}` | no |
 | location | Azure region to use | `string` | n/a | yes |
 | lock\_level | Specifies the Level to be used for this RG Lock. Possible values are Empty (no lock), CanNotDelete and ReadOnly. | `string` | `""` | no |
+| name\_prefix | Optional prefix for the generated name | `string` | `""` | no |
 | stack | Project stack name | `string` | n/a | yes |
 
 ## Outputs
