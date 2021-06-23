@@ -56,6 +56,7 @@ module "rg" {
 | location         | Azure region to use                                                                                                                                                | `string`      | n/a     |   yes    |
 | lock\_level      | Specifies the Level to be used for this RG Lock. Possible values are Empty (no lock), CanNotDelete and ReadOnly.                                                   | `string`      | `""`    |    no    |
 | name\_prefix     | Optional prefix for the generated name                                                                                                                             | `string`      | `""`    |    no    |
+| name\_suffix     | Optional suffix for the generated name                                                                                                                             | `string`      | `""`    |    no    |
 | stack            | Project stack name                                                                                                                                                 | `string`      | n/a     |   yes    |
 | use\_caf\_naming | Use the Azure CAF naming provider to generate default resource name. `custom_rg_name` override this if set. Legacy default name is used if this is set to `false`. | `bool`        | `true`  |    no    |
 

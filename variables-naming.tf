@@ -4,6 +4,12 @@ variable "name_prefix" {
   default     = ""
 }
 
+variable "name_suffix" {
+  description = "Optional suffix for the generated name"
+  type        = string
+  default     = ""
+}
+
 variable "custom_rg_name" {
   description = "Optional custom resource group name"
   type        = string
