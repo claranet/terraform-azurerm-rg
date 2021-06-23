@@ -1,11 +1,3 @@
-resource "azurecaf_name" "rg" {
-  name          = var.stack
-  resource_type = "azurerm_resource_group"
-  prefixes      = var.name_prefix == "" ? null : [var.name_prefix]
-  suffixes      = [var.client_name, var.environment]
-  clean_input   = true
-}
-
 resource "azurerm_resource_group" "main_rg" {
   name     = local.rg_name
   location = var.location
