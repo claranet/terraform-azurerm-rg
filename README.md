@@ -8,10 +8,15 @@ Common Azure terraform module to create a Resource Group with optional lock.
 | Module version | Terraform version | AzureRM version |
 | -------------- | ----------------- | --------------- |
 | >= 5.x.x       | 0.15.x, 1.0.x     | >= 2.0          |
-| >= 4.x.x       | 0.13.x            | >= 2.0          |
+| >= 4.x.x       | 0.13.x, 0.14.x    | >= 2.0          |
 | >= 3.x.x       | 0.12.x            | >= 2.0          |
 | >= 2.x.x       | 0.12.x            | < 2.0           |
 | <  2.x.x       | 0.11.x            | < 2.0           |
+
+## Naming
+
+Resource naming is based on the [Microsoft CAF naming convention best practices](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming). Legacy naming is available by setting the parameter `use_caf_naming` to false.
+We rely on [the official Terraform Azure CAF naming provider](https://registry.terraform.io/providers/aztfmod/azurecaf/latest/docs/resources/azurecaf_name) to generate resource names.
 
 ## Usage
 
