@@ -1,3 +1,10 @@
+# v5.x.x - unreleased
+
+Breaking
+  * AZ-515: Option to use Azure CAF naming provider to name resources
+  * AZ-515: Require Terraform 0.13+
+  * AZ-484: CI updated, module now optimized for Terraform 1.0+
+
 # v3.1.0/v4.1.0 - 2020-12-15
 
 Changed

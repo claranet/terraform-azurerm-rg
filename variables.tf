@@ -18,18 +18,6 @@ variable "stack" {
   type        = string
 }
 
-variable "name_prefix" {
-  description = "Optional prefix for the generated name"
-  type        = string
-  default     = ""
-}
-
-variable "custom_rg_name" {
-  description = "Optional custom resource group name"
-  type        = string
-  default     = ""
-}
-
 variable "extra_tags" {
   description = "Extra tags to add"
   type        = map(string)
