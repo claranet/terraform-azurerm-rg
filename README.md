@@ -1,3 +1,4 @@
+<!-- BEGIN_TF_DOCS -->
 # Azure Resource Group
 [![Changelog](https://img.shields.io/badge/changelog-release-green.svg)](CHANGELOG.md) [![Notice](https://img.shields.io/badge/notice-copyright-yellow.svg)](NOTICE) [![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-orange.svg)](LICENSE) [![TF Registry](https://img.shields.io/badge/terraform-registry-blue.svg)](https://registry.terraform.io/modules/claranet/rg/azurerm/)
 
@@ -45,36 +46,47 @@ module "rg" {
 
 ## Providers
 
-| Name     | Version |
-| -------- | ------- |
-| azurecaf | ~> 1.1  |
-| azurerm  | >= 1.32 |
+| Name | Version |
+|------|---------|
+| azurecaf | ~> 1.1 |
+| azurerm | >= 1.32 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [azurecaf_name.rg](https://registry.terraform.io/providers/aztfmod/azurecaf/latest/docs/resources/name) | resource |
+| [azurerm_management_lock.resource-group-level-lock](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/management_lock) | resource |
+| [azurerm_resource_group.main_rg](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group) | resource |
 
 ## Inputs
 
-| Name             | Description                                                                                                                                                        | Type          | Default | Required |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- | ------- | :------: |
-| client\_name     | Client name/account used in naming                                                                                                                                 | `string`      | n/a     |   yes    |
-| custom\_rg\_name | Optional custom resource group name                                                                                                                                | `string`      | `""`    |    no    |
-| environment      | Project environment                                                                                                                                                | `string`      | n/a     |   yes    |
-| extra\_tags      | Extra tags to add                                                                                                                                                  | `map(string)` | `{}`    |    no    |
-| location         | Azure region to use                                                                                                                                                | `string`      | n/a     |   yes    |
-| lock\_level      | Specifies the Level to be used for this RG Lock. Possible values are Empty (no lock), CanNotDelete and ReadOnly.                                                   | `string`      | `""`    |    no    |
-| name\_prefix     | Optional prefix for the generated name                                                                                                                             | `string`      | `""`    |    no    |
-| name\_suffix     | Optional suffix for the generated name                                                                                                                             | `string`      | `""`    |    no    |
-| stack            | Project stack name                                                                                                                                                 | `string`      | n/a     |   yes    |
-| use\_caf\_naming | Use the Azure CAF naming provider to generate default resource name. `custom_rg_name` override this if set. Legacy default name is used if this is set to `false`. | `bool`        | `true`  |    no    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| client\_name | Client name/account used in naming | `string` | n/a | yes |
+| custom\_rg\_name | Optional custom resource group name | `string` | `""` | no |
+| environment | Project environment | `string` | n/a | yes |
+| extra\_tags | Extra tags to add | `map(string)` | `{}` | no |
+| location | Azure region to use | `string` | n/a | yes |
+| lock\_level | Specifies the Level to be used for this RG Lock. Possible values are Empty (no lock), CanNotDelete and ReadOnly. | `string` | `""` | no |
+| name\_prefix | Optional prefix for the generated name | `string` | `""` | no |
+| name\_suffix | Optional suffix for the generated name | `string` | `""` | no |
+| stack | Project stack name | `string` | n/a | yes |
+| use\_caf\_naming | Use the Azure CAF naming provider to generate default resource name. `custom_rg_name` override this if set. Legacy default name is used if this is set to `false`. | `bool` | `true` | no |
 
 ## Outputs
 
-| Name                      | Description                      |
-| ------------------------- | -------------------------------- |
-| resource\_group\_id       | Resource group generated id      |
+| Name | Description |
+|------|-------------|
+| resource\_group\_id | Resource group generated id |
 | resource\_group\_location | Resource group location (region) |
-| resource\_group\_name     | Resource group name              |
+| resource\_group\_name | Resource group name |
 
 ## Related documentation
 
-Terraform Azure RG documentation: [terraform.io/docs/providers/azurerm/r/resource_group.html](https://www.terraform.io/docs/providers/azurerm/r/resource_group.html)
-
-Terraform Lock management documentation: [terraform.io/docs/providers/azurerm/r/management_lock.html](https://www.terraform.io/docs/providers/azurerm/r/management_lock.html)
+Azure Lock management documentation: [docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources?tabs=json)
+<!-- END_TF_DOCS -->
