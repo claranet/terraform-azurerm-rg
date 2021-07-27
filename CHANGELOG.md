@@ -1,3 +1,8 @@
+# Unreleased
+
+Changed
+* AZ-546: Rename lock resource (to update state: `terraform state mv module.rg.azurerm_management_lock.resource-group-level-lock module.rg.azurerm_management_lock.resource_group_level_lock`)
+
 # v5.0.0 - 2021-07-07
 
 Breaking
