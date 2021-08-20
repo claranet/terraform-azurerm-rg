@@ -1,4 +1,3 @@
-<!-- BEGIN_TF_DOCS -->
 # Azure Resource Group
 [![Changelog](https://img.shields.io/badge/changelog-release-green.svg)](CHANGELOG.md) [![Notice](https://img.shields.io/badge/notice-copyright-yellow.svg)](NOTICE) [![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-orange.svg)](LICENSE) [![TF Registry](https://img.shields.io/badge/terraform-registry-blue.svg)](https://registry.terraform.io/modules/claranet/rg/azurerm/)
 
@@ -44,6 +43,7 @@ module "rg" {
 }
 ```
 
+<!-- BEGIN_TF_DOCS -->
 ## Providers
 
 | Name | Version |
@@ -85,8 +85,7 @@ No modules.
 | resource\_group\_id | Resource group generated id |
 | resource\_group\_location | Resource group location (region) |
 | resource\_group\_name | Resource group name |
-
+<!-- END_TF_DOCS -->
 ## Related documentation
 
 Azure Lock management documentation: [docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources?tabs=json)
-<!-- END_TF_DOCS -->
