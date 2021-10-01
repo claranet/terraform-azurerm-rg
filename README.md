@@ -3,20 +3,21 @@
 
 Common Azure terraform module to create a Resource Group with optional lock.
 
-## Version compatibility
-
-| Module version | Terraform version | AzureRM version |
-| -------------- | ----------------- | --------------- |
-| >= 5.x.x       | 0.15.x, 1.0.x     | >= 2.0          |
-| >= 4.x.x       | 0.13.x, 0.14.x    | >= 2.0          |
-| >= 3.x.x       | 0.12.x            | >= 2.0          |
-| >= 2.x.x       | 0.12.x            | < 2.0           |
-| <  2.x.x       | 0.11.x            | < 2.0           |
-
 ## Naming
 
 Resource naming is based on the [Microsoft CAF naming convention best practices](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming). Legacy naming is available by setting the parameter `use_caf_naming` to false.
 We rely on [the official Terraform Azure CAF naming provider](https://registry.terraform.io/providers/aztfmod/azurecaf/latest/docs/resources/azurecaf_name) to generate resource names.
+
+<!-- BEGIN_TF_DOCS -->
+## Global versioning rule for Claranet Azure modules
+
+| Module version | Terraform version | AzureRM version |
+| -------------- | ----------------- | --------------- |
+| >= 5.x.x       | 0.15.x & 1.0.x    | >= 2.0          |
+| >= 4.x.x       | 0.13.x            | >= 2.0          |
+| >= 3.x.x       | 0.12.x            | >= 2.0          |
+| >= 2.x.x       | 0.12.x            | < 2.0           |
+| <  2.x.x       | 0.11.x            | < 2.0           |
 
 ## Usage
 
@@ -25,7 +26,7 @@ which set some terraform variables in the environment needed by this module.
 More details about variables set by the `terraform-wrapper` available in the [documentation](https://github.com/claranet/terraform-wrapper#environment).
 
 ```hcl
-module "azure-region" {
+module "azure_region" {
   source  = "claranet/regions/azurerm"
   version = "x.x.x"
 
@@ -36,14 +37,14 @@ module "rg" {
   source  = "claranet/rg/azurerm"
   version = "x.x.x"
 
-  location    = module.azure-region.location
+  location    = module.azure_region.location
   client_name = var.client_name
   environment = var.environment
   stack       = var.stack
 }
+
 ```
 
-<!-- BEGIN_TF_DOCS -->
 ## Providers
 
 | Name | Version |
