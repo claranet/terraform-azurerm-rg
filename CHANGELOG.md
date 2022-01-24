@@ -1,5 +1,8 @@
 # Unreleased
 
+Added
+  * AZ-615: Add an option to enable or disable default tags
+
 Changed
   * AZ-572: Revamp examples and improve CI
 
@@ -60,7 +63,7 @@ Breaking
 
 Added
   * AZ-118: Add LICENSE, NOTICE & Github badges
-	  
+
 # v1.0.0 - 2019-02-26
 
 Added

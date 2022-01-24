@@ -18,12 +18,6 @@ variable "stack" {
   type        = string
 }
 
-variable "extra_tags" {
-  description = "Extra tags to add"
-  type        = map(string)
-  default     = {}
-}
-
 variable "lock_level" {
   description = "Specifies the Level to be used for this RG Lock. Possible values are Empty (no lock), CanNotDelete and ReadOnly."
   type        = string
