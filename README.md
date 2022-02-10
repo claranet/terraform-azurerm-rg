@@ -70,8 +70,9 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | client\_name | Client name/account used in naming | `string` | n/a | yes |
 | custom\_rg\_name | Optional custom resource group name | `string` | `""` | no |
+| default\_tags\_enabled | Option to enable or disable default tags. | `bool` | `true` | no |
 | environment | Project environment | `string` | n/a | yes |
-| extra\_tags | Extra tags to add | `map(string)` | `{}` | no |
+| extra\_tags | Extra tags to add. | `map(string)` | `{}` | no |
 | location | Azure region to use | `string` | n/a | yes |
 | lock\_level | Specifies the Level to be used for this RG Lock. Possible values are Empty (no lock), CanNotDelete and ReadOnly. | `string` | `""` | no |
 | name\_prefix | Optional prefix for the generated name | `string` | `""` | no |
