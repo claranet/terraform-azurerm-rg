@@ -1,4 +1,4 @@
-# Unreleased
+# v6.0.0 - 2022-07-08
 
 Changed
   * AZ-717: Update README and improve CI for AzureRM provider `v3.x`
