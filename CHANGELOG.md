@@ -1,3 +1,11 @@
+# Unreleased
+
+Breaking
+  * AZ-840: Require Terraform 1.3+
+
+Changed
+  * AZ-908: Use the new data source for CAF naming (instead of resource)
+
 # v6.0.0 - 2022-07-08
 
 Changed
