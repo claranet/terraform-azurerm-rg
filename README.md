@@ -50,7 +50,7 @@ module "rg" {
 
 | Name | Version |
 |------|---------|
-| azurecaf | ~> 1.1 |
+| azurecaf | ~> 1.2, >= 1.2.22 |
 | azurerm | >= 1.32 |
 
 ## Modules
@@ -61,9 +61,9 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [azurecaf_name.rg](https://registry.terraform.io/providers/aztfmod/azurecaf/latest/docs/resources/name) | resource |
 | [azurerm_management_lock.resource_group_level_lock](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/management_lock) | resource |
 | [azurerm_resource_group.main_rg](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group) | resource |
+| [azurecaf_name.rg](https://registry.terraform.io/providers/aztfmod/azurecaf/latest/docs/data-sources/name) | data source |
 
 ## Inputs
 
