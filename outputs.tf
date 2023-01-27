@@ -12,4 +12,3 @@ output "resource_group_location" {
   value       = azurerm_resource_group.main_rg.location
   description = "Resource group location (region)"
 }
-
