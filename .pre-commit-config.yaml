@@ -18,9 +18,9 @@ repos:
     - id: terraform_fmt
     - id: terraform_docs
       args:
-        - '--args=markdown --hide requirements --anchor=false --output-file README.md --lockfile=false --config=../../ci/terraform-docs.yml'
+        - '--args=--config=.config/terraform-docs.yml'
     - id: terraform_tflint
       args:
-        - '--args=--config=../../ci/tflint.hcl'
+        - '--args=--config=.config/tflint.hcl'
         - --env-vars=TFLINT_LOG="info"
     - id: terraform_tfsec
