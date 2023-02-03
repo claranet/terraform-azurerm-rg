@@ -1,5 +1,7 @@
 plugin "azurerm" {
   enabled = true
+  source  = "github.com/terraform-linters/tflint-ruleset-azurerm"
+  version = "0.20.0"
 }
 
 config {
@@ -7,7 +9,7 @@ config {
   force = false
   disabled_by_default = false
 
-  varfile = ["terraform.tfvars"]
+  varfile = ["terraform.tfvars.ci"]
 }
 
 rule "terraform_deprecated_interpolation" {
