@@ -18,10 +18,12 @@ repos:
     - id: terraform_fmt
     - id: terraform_docs
       args:
-        - '--args=--config=.config/terraform-docs.yml'
+        - --args=--config=.config/terraform-docs.yml
     - id: terraform_validate
+      exclude: ^examples
     - id: terraform_tflint
+      exclude: ^examples
       args:
-        - '--args=--config=.config/tflint.hcl'
+        - --args=--config=__GIT_WORKING_DIR__/.config/tflint.hcl
         - --env-vars=TFLINT_LOG="info"
     - id: terraform_tfsec
