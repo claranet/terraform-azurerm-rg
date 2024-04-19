@@ -145,7 +145,7 @@
               "type": "section",
               "text": {
                 "type": "mrkdwn",
-                "text": ":dancing-tofu: New :azure3: module [$package_name]($repo_url) *$npm_package_version* version out! :dancing-tofu:"
+                "text": ":dancing-tofu: New :azure3: <$repo_url|module $package_name> *$npm_package_version* version out! :dancing-tofu:"
               }
             },
             {
