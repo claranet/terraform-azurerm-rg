@@ -1,3 +1,21 @@
+## 6.1.1 (2024-04-19)
+
+
+### Bug Fixes
+
+* **release:** update Slack Release note ad4e309
+
+
+### Continuous Integration
+
+* **AZ-1391:** enable semantic-release [skip ci] ae3f7f3
+
+
+### Miscellaneous Chores
+
+* **deps:** add renovate.json fc08660
+* **deps:** update renovate.json e551491
+
 # v6.1.0 - 2022-11-23
 
 Breaking
