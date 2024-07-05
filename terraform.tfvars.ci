@@ -1,7 +1,8 @@
-location    = "France Central"
-client_name = "test"
-environment = "test"
-stack       = "ci"
+location        = "France Central"
+client_name     = "test"
+environment     = "test"
+stack           = "ci"
+subscription_id = "00000000-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
 extra_tags = {
   foo = "bar"
