@@ -3,6 +3,11 @@ variable "location" {
   type        = string
 }
 
+variable "location_short" {
+  description = "Short string for Azure location."
+  type        = string
+}
+
 variable "client_name" {
   description = "Client name/account used in naming."
   type        = string

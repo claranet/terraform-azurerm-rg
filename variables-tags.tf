@@ -5,7 +5,7 @@ variable "default_tags_enabled" {
 }
 
 variable "extra_tags" {
-  description = "Extra tags to add."
+  description = "Additional tags to add on resources."
   type        = map(string)
   default     = {}
 }
