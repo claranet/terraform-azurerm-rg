@@ -1,3 +1,18 @@
+## 8.0.0 (2024-10-04)
+
+### ⚠ BREAKING CHANGES
+
+* **AZ-1088:** rework module v8
+
+### Features
+
+* **AZ-1088:** rework module v8 7d1004e
+
+### Miscellaneous Chores
+
+* **deps:** update dependency opentofu to v1.8.3 9c5dcf6
+* **deps:** update dependency trivy to v0.56.1 83286b2
+
 ## 7.1.0 (2024-10-03)
 
 ### Features
