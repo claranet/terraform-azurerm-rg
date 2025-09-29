@@ -55,7 +55,7 @@ module "rg" {
 
 | Name | Version |
 |------|---------|
-| azurecaf | ~> 1.2.26 |
+| azurecaf | >= 1.2.28 |
 | azurerm | ~> 4.31 |
 
 ## Modules
