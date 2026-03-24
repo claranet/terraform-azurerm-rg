@@ -11,7 +11,7 @@ variable "name_suffix" {
 }
 
 variable "custom_name" {
-  description = "Custom Resource Group name, generated if not set."
+  description = "Custom Resource Group name. Generated if not set."
   type        = string
   default     = ""
 }
