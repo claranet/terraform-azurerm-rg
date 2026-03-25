@@ -24,7 +24,7 @@ variable "stack" {
 }
 
 variable "lock_level" {
-  description = "Specifies the Level to be used for this RG Lock. Possible values are Empty (no lock), `CanNotDelete` and `ReadOnly`."
+  description = "Specifies the level to be used for this RG Lock. Possible values are empty string (no lock), `CanNotDelete`, and `ReadOnly`."
   type        = string
   default     = ""
 }

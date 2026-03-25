@@ -75,13 +75,13 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | client\_name | Client name/account used in naming. | `string` | n/a | yes |
-| custom\_name | Custom Resource Group name, generated if not set. | `string` | `""` | no |
+| custom\_name | Custom Resource Group name. Generated if not set. | `string` | `""` | no |
 | default\_tags\_enabled | Option to enable or disable default tags. | `bool` | `true` | no |
 | environment | Project environment. | `string` | n/a | yes |
 | extra\_tags | Additional tags to add on resources. | `map(string)` | `{}` | no |
 | location | Azure region to use. | `string` | n/a | yes |
 | location\_short | Short string for Azure location. | `string` | n/a | yes |
-| lock\_level | Specifies the Level to be used for this RG Lock. Possible values are Empty (no lock), `CanNotDelete` and `ReadOnly`. | `string` | `""` | no |
+| lock\_level | Specifies the level to be used for this RG Lock. Possible values are empty string (no lock), `CanNotDelete`, and `ReadOnly`. | `string` | `""` | no |
 | name\_prefix | Optional prefix for the generated name. | `string` | `""` | no |
 | name\_suffix | Optional suffix for the generated name. | `string` | `""` | no |
 | stack | Project stack name. | `string` | n/a | yes |
@@ -90,10 +90,10 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| id | Resource group ID. |
-| name | Resource group name. |
-| resource | Resource output. |
-| resource\_management\_lock | Management lock output. |
+| id | ARM resource ID of the Azure Resource Group. |
+| name | Name of the Azure Resource Group. |
+| resource | Azure Resource Group object. |
+| resource\_management\_lock | Azure Management Lock applied to the Resource Group, or `null` if no lock is configured. |
 <!-- END_TF_DOCS -->
 ## Related documentation
 
