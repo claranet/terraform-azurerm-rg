@@ -1,3 +1,9 @@
+## 8.0.4 (2026-03-26)
+
+### Documentation
+
+* 📚️ update output desc 01a8b6f
+
 ## 8.0.3 (2026-03-25)
 
 ### Bug Fixes
