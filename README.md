@@ -90,7 +90,7 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| id | ARM resource ID of the Azure Resource Group. |
+| id | ID of the Azure Resource Group. |
 | name | Name of the Azure Resource Group. |
 | resource | Azure Resource Group object. |
 | resource\_management\_lock | Azure Management Lock applied to the Resource Group, or `null` if no lock is configured. |

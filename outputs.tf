@@ -9,7 +9,7 @@ output "name" {
 }
 
 output "id" {
-  description = "ARM resource ID of the Azure Resource Group."
+  description = "ID of the Azure Resource Group."
   value       = azurerm_resource_group.main.id
 }
 
