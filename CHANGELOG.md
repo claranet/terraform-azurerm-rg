@@ -1,3 +1,9 @@
+## 8.0.5 (2026-03-27)
+
+### Code Refactoring
+
+* update module structure and Github actions 👷 c9da95b
+
 ## 8.0.4 (2026-03-26)
 
 ### Documentation
