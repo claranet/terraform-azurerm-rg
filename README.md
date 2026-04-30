@@ -54,7 +54,7 @@ module "rg" {
 ## Providers
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | azurecaf | >= 1.2.28 |
 | azurerm | ~> 4.31 |
 
@@ -65,7 +65,7 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [azurerm_management_lock.main](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/management_lock) | resource |
 | [azurerm_resource_group.main](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group) | resource |
 | [azurecaf_name.rg](https://registry.terraform.io/providers/claranet/azurecaf/latest/docs/data-sources/name) | data source |
@@ -73,7 +73,7 @@ No modules.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | client\_name | Client name/account used in naming. | `string` | n/a | yes |
 | custom\_name | Custom Resource Group name. Generated if not set. | `string` | `""` | no |
 | default\_tags\_enabled | Option to enable or disable default tags. | `bool` | `true` | no |
@@ -89,7 +89,7 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | id | ID of the Azure Resource Group. |
 | name | Name of the Azure Resource Group. |
 | resource | Azure Resource Group object. |
