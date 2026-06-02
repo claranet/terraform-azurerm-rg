@@ -1,6 +1,7 @@
 output "resource" {
   description = "Azure Resource Group object."
   value       = azurerm_resource_group.main
+  sensitive   = true
 }
 
 output "name" {
