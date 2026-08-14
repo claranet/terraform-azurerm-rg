@@ -1,3 +1,23 @@
+## 9.0.0 (2026-08-14)
+
+### ⚠ BREAKING CHANGES
+
+* **SREAA-368:** raises the minimum required OpenTofu version to
+>= 1.12 (was >= 1.8) and the AzureRM provider constraint to ~> 5.0
+(was ~> 4.31). Terraform (Hashicorp) remains unverified, as since
+v8.0.0. Consumers must upgrade OpenTofu and the AzureRM provider
+before consuming this module version.
+
+### Features
+
+* **SREAA-368:** upgrade module to v9 (OpenTofu >= 1.12, AzureRM ~> 5.0) a0b7004
+
+### Miscellaneous Chores
+
+* **deps:** update dependency opentofu to v1.12.5 f310ce5
+* **deps:** update dependency tflint to v0.64.0 0c29804
+* **v9:** 🐛 synchronize common files and docs 5830d99
+
 ## 8.0.7 (2026-07-20)
 
 ### Bug Fixes
