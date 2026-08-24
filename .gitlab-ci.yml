@@ -5,6 +5,6 @@ variables:
 
 include:
   - project: 'claranet/projects/cloud/azure/terraform/ci'
-    ref: v9.0.1
+    ref: v9.0.2
     file: '/pipeline.yml'
 ...
